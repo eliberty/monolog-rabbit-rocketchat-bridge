@@ -25,7 +25,6 @@ const getFormattedMessage = (msg) => {
 };
 
 const getColor = (level) => {
-	console.log('level: %s', level);
 	let color = '#000000';
 	switch(parseInt(level)) {
 		case 100:
@@ -60,8 +59,6 @@ const convertMessage = (payload) => {
 		text: 'Context and Extras',
 		fields: []
 	};
-
-	console.log(attachment);
 
 	if (logMessage.context) {
 		const fields = Object.entries(logMessage.context);

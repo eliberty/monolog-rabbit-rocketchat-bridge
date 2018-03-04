@@ -1,10 +1,12 @@
-# Monolog - Rabbitmq bridge to Rocketchat webhook
+# Monolog - Rabbitmq bridge to Rocket.chat webhook
 
 As of today, there is no existant monolog handler for rocketchat.
+
 This bridge is here to fill the gap. Instead of sending directly messages to rocketchat, we send it via rabbitmq.
 
 ## Rabbitmq setup
-Create an exchange (topic) that will receive all amqp json logs from monolog
+Create an exchange (topic) that will receive all amqp json logs from monolog.
+
 It's possible to create one queue per needed topic
 
 For exemple, it's possible to create a queue for app.channel and create bind with a routing key of app.channel
@@ -35,6 +37,6 @@ Create a new incoming integration, no script is needed, and get back the server 
 - RABBITMQ_PASSWORD
 - RABBITMQ_QUEUE The queue to listen for incoming messages
 
-- ROCKETMAIL_SERVER (https://my.rocket/server)
+- ROCKETMAIL_SERVER (https://my.rocket.server)
 - ROCKETMAIL_WEBHOOK_TOKEN The token string for your webhook
 
