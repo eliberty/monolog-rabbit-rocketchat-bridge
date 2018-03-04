@@ -1,0 +1,21 @@
+{
+  "name": "rabbit_to_rocket_bridge",
+  "version": "1.0.0",
+  "description": "RabbitMQ to Rocketmail bridge",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rabbitmq",
+    "rocket"
+  ],
+  "author": "xavier",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "dotenv": "^5.0.1",
+    "superagent": "^3.8.2"
+  }
+}
